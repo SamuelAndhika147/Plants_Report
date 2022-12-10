@@ -1,3 +1,12 @@
+{{-- This Project Pure Created By Samuel Andhika Prasetyo --}}
+{{-- The Style is Pure CSS --}}
+{{-- If You Want To Copy This Project, You Should Contact Me First --}}
+{{-- Instagram: samuel.andhika --}}
+
+{{-- ------------------------------------------------------------ --}}
+
+
+
 @extends('layouts.layout')
 
 @section('style')
