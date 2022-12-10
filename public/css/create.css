@@ -1,0 +1,190 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.container form{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: auto;
+    gap: 1rem;
+    margin-top: 5rem;
+    padding: 1rem 3rem 5rem 3rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container form:hover{
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
+}
+
+.container form h2{
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+
+/* ROW FORM */
+.container form .row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container form .row .plant{
+    display: flex;
+    flex-direction: column;
+}
+
+.container form .row .kode{
+    display: flex;
+    flex-direction: column;
+}
+
+.container form .row .plant input{
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.container form .row .kode input{
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.container form .row .plant input:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container form .row .kode input:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+
+
+
+
+
+/* Type FORM */
+.container form .type{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.container form .type select{
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.container form .type textarea{
+    border-radius: 10px;
+}
+
+.container form .type select:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container form .type textarea:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+
+
+/* BUTTONS */
+.container form .buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.container form .buttons button{
+    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.container form .buttons #save button{
+    background-color: blue; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: none;
+}
+
+.container form .buttons #save button a{
+    color: white;
+    text-decoration: none;
+}
+
+.container form .buttons #cancel button{
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: none;
+}
+
+.container form .buttons #cancel button a{
+    color: blue;
+    text-decoration: none;
+}
+
+.container form .buttons #save button:hover{
+    cursor: pointer;
+    background-color: rgb(93, 93, 255);
+}
+
+.container form .buttons #cancel button:hover{
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+}
+
+
+
+
+
+
+/* BOTTOM */
+.container form .bottom{    
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
+
+    border-top: 1px solid black;
+}
+
+.container form .bottom button{
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container form .bottom button:hover{
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+}
+
+.container form .bottom button a{
+    color: red;
+    text-decoration: none;
+}
+
+.container form .bottom .teks h4{
+    margin: 0;
+}
+
+.container form .bottom .teks p{
+    margin: 0;
+}
