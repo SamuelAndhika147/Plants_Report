@@ -1,6 +1,7 @@
 {{-- This Project Pure Created By Samuel Andhika Prasetyo --}}
 {{-- The Style is Pure CSS --}}
 {{-- If You Want To Copy This Project, You Should Contact Me First --}}
+{{-- If This Project Have Error/Bug Dont Hestitate To Contact Me --}}
 {{-- Instagram: samuel.andhika --}}
 
 {{-- ------------------------------------------------------------ --}}
