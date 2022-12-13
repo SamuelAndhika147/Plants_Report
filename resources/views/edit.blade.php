@@ -38,9 +38,9 @@
         <div class="type">
             <label for="">Type</label>
             <select name="type" value="{{$plant['type']}}" style="padding: 5px">
-                <option value="obat">Tanaman Obat</option>
-                <option value="hias">Tanaman Hias</option>
-                <option value="pangan">Tanaman Pangan</option>
+                <option value="obat" @if($plant['type'] == 'obat') selected @endif>Tanaman Obat</option>
+                <option value="hias" @if($plant['type'] == 'hias') selected @endif>Tanaman Hias</option>
+                <option value="pangan" @if($plant['type'] == 'pangan') selected @endif>Tanaman Pangan</option>
             </select>
             <label for="">Notes</label>
             <textarea name="note" cols="30" rows="10" placeholder="Notes" style="padding: 5px">{{$plant['note']}}</textarea>
