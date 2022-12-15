@@ -42,7 +42,8 @@ class PlantController extends Controller
             'kode' => 'required|min:4',
             'name_plant' => 'required|min:3',
             'type' => 'required',
-            'note' => 'nullable', 
+            'note' => 'nullable',
+            'growth' => 'nullable'
          ]);
 
          Plant::create([
@@ -94,6 +95,7 @@ class PlantController extends Controller
             'name_plant' => 'required|min:3',
             'type' => 'required',
             'note' => 'nullable', 
+            'growth' => 'nullable'
          ]);
 
          Plant::where('id', $id)->update([
@@ -101,6 +103,7 @@ class PlantController extends Controller
             'name_plant' => $request->name_plant,
             'type' => $request->type,
             'note' => $request->note,
+            'growth' => $request->growth,
          ]);
 
          Alert::toast('Berhasil Merubah Tanaman!', 'success');

@@ -12,6 +12,7 @@ class Plant extends Model
         'kode',
         'name_plant',
         'type',
-        'note'
+        'note',
+        'growth',
     ];
 }

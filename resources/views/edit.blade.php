@@ -18,7 +18,7 @@
                 <li style="color: red;">{{ $error }}</li>
                 @endforeach
             </ul>
-        </div>
+        </di8v>
         @endif
         @csrf
         @method('PATCH')
@@ -37,13 +37,29 @@
 
         <div class="type">
             <label for="">Type</label>
-            <select name="type" value="{{$plant['type']}}" style="padding: 5px">
-                <option value="obat" @if($plant['type'] == 'obat') selected @endif>Tanaman Obat</option>
-                <option value="hias" @if($plant['type'] == 'hias') selected @endif>Tanaman Hias</option>
-                <option value="pangan" @if($plant['type'] == 'pangan') selected @endif>Tanaman Pangan</option>
+            <select name="type" style="padding: 5px">
+                <option value="Obat" @if($plant['type'] == 'Obat') selected @endif>Tanaman Obat</option>
+                <option value="Hias" @if($plant['type'] == 'Hias') selected @endif>Tanaman Hias</option>
+                <option value="Pangan" @if($plant['type'] == 'Pangan') selected @endif>Tanaman Pangan</option>
             </select>
             <label for="">Notes</label>
-            <textarea name="note" cols="30" rows="10" placeholder="Notes" style="padding: 5px">{{$plant['note']}}</textarea>
+            <textarea name="note" cols="30" rows="10" placeholder="Notes" style="padding: 5px">
+                {{$plant['note']}}
+            </textarea>
+        </div>
+
+        <div class="type">
+            <label for="">Growth</label>
+            <select name="growth" style="padding: 5px">
+                <option value="Benih" @if($plant['growth'] == 'Benih') selected @endif>Masih Benih</option>
+                <option value="Bertunas" @if($plant['growth'] == 'Bertunas') selected @endif>Bertunas</option>
+                <option value="Tumbuh Batang" @if($plant['growth'] == 'Tumbuh Batang') selected @endif>Tumbuh Batang</option>
+                <option value="Tumbuh Daun" @if($plant['growth'] == 'Tumbuh Daun') selected @endif>Tumbuh Daun</option>
+                <option value="Tumbuh Bunga" @if($plant['growth'] == 'Tumbuh Bunga') selected @endif>Tumbuh Bunga</option>
+                <option value="Berbuah" @if($plant['growth'] == 'Berbuah') selected @endif>Berbuah</option>
+                <option value="Layu" @if($plant['growth'] == 'Layu') selected @endif>Sudah Layu</option>
+                <option value="Mati" @if($plant['growth'] == 'Mati') selected @endif>Sudah Mati</option>
+            </select>
         </div>
 
         <div class="buttons">

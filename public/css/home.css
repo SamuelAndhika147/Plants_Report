@@ -77,6 +77,10 @@ body{
     padding: 1rem 5rem 1rem 5rem;
 }
 
+.middle .id h2{
+    padding-right: 1.5rem;
+}
+
 .content .middle .title{
     display: flex;
     flex-direction: column;
@@ -112,7 +116,7 @@ body{
 }
 
 .content .bottom .tabel{
-  border-collapse: collapse;
+  border-collapse: collapse; 
   width: 100%;
 }
 
@@ -120,6 +124,13 @@ body{
     border-bottom: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+}
+
+.content .bottom .tabel td{
+    max-width: 100px;  
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 
 .content .bottom .tabel td .action{

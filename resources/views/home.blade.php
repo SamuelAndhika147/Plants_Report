@@ -3,7 +3,7 @@
 {{-- If You Want To Copy This Project, You Should Contact Me First --}}
 {{-- If This Project Have Error/Bug Dont Hestitate To Contact Me --}}
 {{-- Instagram: samuel.andhika --}}
-
+ 
 {{-- ------------------------------------------------------------ --}}
 
 
@@ -38,7 +38,7 @@
 
         
         <div class="id">       
-            <h3>{{$plants->count()}}</h3>
+            <h2>{{$plants->count()}}</h2>
         </div>
     </div>
 
@@ -47,8 +47,8 @@
             <tr>
                 <th>Kode</th>
                 <th>Name</th>
-                <th style="color: white">block</th>
                 <th>Type</th>
+                <th>Notes</th>
                 <th>Growth</th>
                 <th>Action</th>
             </tr>
@@ -56,9 +56,9 @@
             <tr>
                 <td>{{ $plant['kode'] }}</td>
                 <td>{{ $plant['name_plant'] }}</td>
-                <td></td>
                 <td>{{ $plant['type'] }}</td>
-                <td>{{ $plant['note'] }}</td>
+                <td style="">{{ $plant['note'] }}</td>
+                <td>{{ $plant['growth'] }}</td>
                 <td>
                     <div class="action">
                     <a href="/edit/{{$plant['id']}}"><img src="/img/edit.png" alt=""></a>

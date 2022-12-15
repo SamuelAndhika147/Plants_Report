@@ -17,8 +17,9 @@ class CreatePlantsTable extends Migration
             $table->id();
             $table->string('kode');
             $table->string('name_plant');
-            $table->enum('type', ['obat', 'hias', 'pangan']);
-            $table->text('note');
+            $table->enum('type', ['Obat', 'Hias', 'Pangan']);
+            $table->text('note')->nullable();
+            $table->enum('growth', ['Benih', 'Bertunas', 'Tumbuh Batang', 'Tumbuh Daun', 'Tumbuh Bunga', 'Berbuah', 'Layu', 'Daun Rontok', 'Mati'])->nullable();
             $table->timestamps();
         });
     }
