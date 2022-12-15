@@ -13,7 +13,7 @@
     @include('sweetalert::alert')
     <div class="navbar">
         <h2>Plants Repot</h2>
-        <h4>By: Samuel</h4>
+        <a href="/logout"><h4>Logout</h4></a>
     </div>
     @yield('content')
 </body>

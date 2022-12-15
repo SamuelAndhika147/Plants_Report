@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Plant;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class PlantController extends Controller
@@ -19,6 +20,18 @@ class PlantController extends Controller
 
         return view('home', compact ('plants'));
     }
+
+    public function register()
+    {
+        return view('register');
+    }
+
+    public function login()
+    {
+        return view('login');
+    }
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -51,10 +64,11 @@ class PlantController extends Controller
             'name_plant' => $request->name_plant,
             'type' => $request->type,
             'note' => $request->note,
+            'user_id' => Auth::user()->id,
          ]);
 
          Alert::toast('Berhasil Menambahkan Tanaman!', 'success');
-         return redirect('/');
+         return redirect('/home');
     }
 
     /**
@@ -104,10 +118,11 @@ class PlantController extends Controller
             'type' => $request->type,
             'note' => $request->note,
             'growth' => $request->growth,
+            'user_id' => Auth::user()->id,
          ]);
 
          Alert::toast('Berhasil Merubah Tanaman!', 'success');
-         return redirect('/');
+         return redirect('/home');
     }
 
     /**
@@ -121,6 +136,6 @@ class PlantController extends Controller
         Plant::where('id', $id)->delete();
 
         Alert::toast('Berhasil Menghapus Tanaman!', 'info');
-        return redirect('/');
+        return redirect('/home');
     }
 }

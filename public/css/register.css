@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10rem;
+}
+
+.container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: auto;
+    height: auto;
+    border: 0px solid black;
+    border-radius: 10px;
+
+    background-image: linear-gradient(#4CA1AF, #C4E0E5);
+}
+
+.container .content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 15rem;
+
+    padding: 3rem 10rem 5rem 3rem;
+}
+
+.container .content form .label{
+    display: flex;
+    flex-direction: column;
+}
+

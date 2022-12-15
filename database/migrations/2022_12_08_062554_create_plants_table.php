@@ -15,6 +15,7 @@ class CreatePlantsTable extends Migration
     {
         Schema::create('plants', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('user_id');
             $table->string('kode');
             $table->string('name_plant');
             $table->enum('type', ['Obat', 'Hias', 'Pangan']);

@@ -9,6 +9,7 @@ class Plant extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'user_id',
         'kode',
         'name_plant',
         'type',
